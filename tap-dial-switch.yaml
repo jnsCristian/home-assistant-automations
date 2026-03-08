@@ -380,6 +380,13 @@ mode: single
 max_exceeded: silent
 
 
+triggers:
+  - trigger: event
+    event_type: zha_event
+    event_data:
+      device_id: !input zha_remote
+    id: zha_event
+    
 actions:
   - alias: Validate integration type matches trigger
     condition: template
