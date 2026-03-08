@@ -405,6 +405,11 @@ mode: single
 max_exceeded: silent
 
 
+variables:
+  # Integration config
+  integration_type: !input integration_type
+  zha_remote: !input zha_remote
+  
 triggers:
   - trigger: event
     event_type: zha_event
