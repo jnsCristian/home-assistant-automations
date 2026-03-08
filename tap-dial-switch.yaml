@@ -22,30 +22,13 @@ blueprint:
           default: []
           selector:
             action: {}
-        button_1_short_release:
-          name: Short Release
-          description: |
-            `optional` `action` `Z2M` `ZHA`
 
-            Action to run on a release of Button 1 after a short press.
-          default: []
-          selector:
-            action: {}
         button_1_hold:
           name: Long Press
           description: |
             `optional` `action` `Z2M` `ZHA`
 
             Action to run on a long press of Button 1. Will repeat while the button is held.
-          default: []
-          selector:
-            action: {}
-        button_1_long_release:
-          name: Long Release
-          description: |
-            `optional` `action` `Z2M` `ZHA`
-
-            Action to run when Button 1 is released after a long press.
           default: []
           selector:
             action: {}
