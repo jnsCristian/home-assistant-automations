@@ -407,7 +407,6 @@ max_exceeded: silent
 
 variables:
   # Integration config
-  integration_type: !input integration_type
   zha_remote: !input zha_remote
   
 triggers:
