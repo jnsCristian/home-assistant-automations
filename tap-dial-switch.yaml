@@ -23,10 +23,2115 @@ blueprint:
           selector:
             action: {}
 
+        button_1_hold:
+          name: Long Press
+          description: |
+            `optional` `action` `Z2M` `ZHA`
 
+            Action to run on a long press of Button 1. Will repeat while the button is held.
+          default: []
+          selector:
+            action: {}
+        button_1_double:
+          name: Double Press
+          description: |
+            `optional` `action` `Z2M` `ZHA`
+
+            Action to run on a double press of Button 1.
+          default: []
+          selector:
+            action: {}
+        button_1_triple:
+          name: Triple Press
+          description: |
+            `optional` `action` `ZHA`
+
+            Action to run on a triple press of Button 1.
+          default: []
+          selector:
+            action: {}
+        button_1_quadruple:
+          name: Quadruple Press
+          description: |
+            `optional` `action` `ZHA`
+
+            Action to run on a quadruple press of Button 1.
+          default: []
+          selector:
+            action: {}
+        button_1_quintuple:
+          name: Quintuple Press
+          description: |
+            `optional` `action` `ZHA`
+
+            Action to run on a quintuple press of Button 1.
+          default: []
+          selector:
+            action: {}
+        button_1_rotate_left:
+          name: Rotate Left
+          description: |
+            `optional` `action` `Z2M` `ZHA`
+
+            Action to run when dial is turned to the left after pressing Button 1.
+          default: []
+          selector:
+            action: {}
+        button_1_rotate_right:
+          name: Rotate Right
+          description: |
+            `optional` `action` `Z2M` `ZHA`
+
+            Action to run when dial is turned to the right after pressing Button 1.
+          default: []
+          selector:
+            action: {}
+
+    button_2_custom:
+      name: Button 2 - Custom Actions
+      icon: mdi:numeric-2-circle-outline
+      collapsed: true
+      input:
+        button_2_press:
+          name: Short Press
+          description: |
+            `optional` `action` `ZHA`
+
+            Action to run on a short press of Button 2.
+          default: []
+          selector:
+            action: {}
+        button_2_short_release:
+          name: Short Release
+          description: |
+            `optional` `action` `Z2M` `ZHA`
+
+            Action to run on a release of Button 2 after a short press.
+          default: []
+          selector:
+            action: {}
+        button_2_hold:
+          name: Long Press
+          description: |
+            `optional` `action` `Z2M` `ZHA`
+
+            Action to run on a long press of Button 2. Will repeat while the button is held.
+          default: []
+          selector:
+            action: {}
+        button_2_long_release:
+          name: Long Release
+          description: |
+            `optional` `action` `Z2M` `ZHA`
+
+            Action to run when Button 2 is released after a long press.
+          default: []
+          selector:
+            action: {}
+        button_2_double:
+          name: Double Press
+          description: |
+            `optional` `action` `Z2M` `ZHA`
+
+            Action to run on a double press of Button 2.
+          default: []
+          selector:
+            action: {}
+        button_2_triple:
+          name: Triple Press
+          description: |
+            `optional` `action` `ZHA`
+
+            Action to run on a triple press of Button 2.
+          default: []
+          selector:
+            action: {}
+        button_2_quadruple:
+          name: Quadruple Press
+          description: |
+            `optional` `action` `ZHA`
+
+            Action to run on a quadruple press of Button 2.
+          default: []
+          selector:
+            action: {}
+        button_2_quintuple:
+          name: Quintuple Press
+          description: |
+            `optional` `action` `ZHA`
+
+            Action to run on a quintuple press of Button 2.
+          default: []
+          selector:
+            action: {}
+        button_2_rotate_left:
+          name: Rotate Left
+          description: |
+            `optional` `action` `Z2M` `ZHA`
+
+            Action to run when dial is turned to the left after pressing Button 2.
+          default: []
+          selector:
+            action: {}
+        button_2_rotate_right:
+          name: Rotate Right
+          description: |
+            `optional` `action` `Z2M` `ZHA`
+
+            Action to run when dial is turned to the right after pressing Button 2.
+          default: []
+          selector:
+            action: {}
+
+    button_3_custom:
+      name: Button 3 - Custom Actions
+      icon: mdi:numeric-3-circle-outline
+      collapsed: true
+      input:
+        button_3_press:
+          name: Short Press
+          description: |
+            `optional` `action` `ZHA`
+
+            Action to run on a short press of Button 3.
+          default: []
+          selector:
+            action: {}
+        button_3_short_release:
+          name: Short Release
+          description: |
+            `optional` `action` `Z2M` `ZHA`
+
+            Action to run on a release of Button 3 after a short press.
+          default: []
+          selector:
+            action: {}
+        button_3_hold:
+          name: Long Press
+          description: |
+            `optional` `action` `Z2M` `ZHA`
+
+            Action to run on a long press of Button 3. Will repeat while the button is held.
+          default: []
+          selector:
+            action: {}
+        button_3_long_release:
+          name: Long Release
+          description: |
+            `optional` `action` `Z2M` `ZHA`
+
+            Action to run when Button 3 is released after a long press.
+          default: []
+          selector:
+            action: {}
+        button_3_double:
+          name: Double Press
+          description: |
+            `optional` `action` `Z2M` `ZHA`
+
+            Action to run on a double press of Button 3.
+          default: []
+          selector:
+            action: {}
+        button_3_triple:
+          name: Triple Press
+          description: |
+            `optional` `action` `ZHA`
+
+            Action to run on a triple press of Button 3.
+          default: []
+          selector:
+            action: {}
+        button_3_quadruple:
+          name: Quadruple Press
+          description: |
+            `optional` `action` `ZHA`
+
+            Action to run on a quadruple press of Button 3.
+          default: []
+          selector:
+            action: {}
+        button_3_quintuple:
+          name: Quintuple Press
+          description: |
+            `optional` `action` `ZHA`
+
+            Action to run on a quintuple press of Button 3.
+          default: []
+          selector:
+            action: {}
+        button_3_rotate_left:
+          name: Rotate Left
+          description: |
+            `optional` `action` `Z2M` `ZHA`
+
+            Action to run when dial is turned to the left after pressing Button 3.
+          default: []
+          selector:
+            action: {}
+        button_3_rotate_right:
+          name: Rotate Right
+          description: |
+            `optional` `action` `Z2M` `ZHA`
+
+            Action to run when dial is turned to the right after pressing Button 3.
+          default: []
+          selector:
+            action: {}
+
+    button_4_custom:
+      name: Button 4 - Custom Actions
+      icon: mdi:numeric-4-circle-outline
+      collapsed: true
+      input:
+        button_4_press:
+          name: Short Press
+          description: |
+            `optional` `action` `ZHA`
+
+            Action to run on a short press of Button 4.
+          default: []
+          selector:
+            action: {}
+        button_4_short_release:
+          name: Short Release
+          description: |
+            `optional` `action` `Z2M` `ZHA`
+
+            Action to run on a release of Button 4 after a short press.
+          default: []
+          selector:
+            action: {}
+        button_4_hold:
+          name: Long Press
+          description: |
+            `optional` `action` `Z2M` `ZHA`
+
+            Action to run on a long press of Button 4. Will repeat while the button is held.
+          default: []
+          selector:
+            action: {}
+        button_4_long_release:
+          name: Long Release
+          description: |
+            `optional` `action` `Z2M` `ZHA`
+
+            Action to run when Button 4 is released after a long press.
+          default: []
+          selector:
+            action: {}
+        button_4_double:
+          name: Double Press
+          description: |
+            `optional` `action` `Z2M` `ZHA`
+
+            Action to run on a double press of Button 4.
+          default: []
+          selector:
+            action: {}
+        button_4_triple:
+          name: Triple Press
+          description: |
+            `optional` `action` `ZHA`
+
+            Action to run on a triple press of Button 4.
+          default: []
+          selector:
+            action: {}
+        button_4_quadruple:
+          name: Quadruple Press
+          description: |
+            `optional` `action` `ZHA`
+
+            Action to run on a quadruple press of Button 4.
+          default: []
+          selector:
+            action: {}
+        button_4_quintuple:
+          name: Quintuple Press
+          description: |
+            `optional` `action` `ZHA`
+
+            Action to run on a quintuple press of Button 4.
+          default: []
+          selector:
+            action: {}
+        button_4_rotate_left:
+          name: Rotate Left
+          description: |
+            `optional` `action` `Z2M` `ZHA`
+
+            Action to run when dial is turned to the left after pressing Button 4.
+          default: []
+          selector:
+            action: {}
+        button_4_rotate_right:
+          name: Rotate Right
+          description: |
+            `optional` `action` `Z2M` `ZHA`
+
+            Action to run when dial is turned to the right after pressing Button 4.
+          default: []
+          selector:
+            action: {}
 
 
 mode: single
 max_exceeded: silent
 
 
+actions:
+  - alias: Validate integration type matches trigger
+    condition: template
+    value_template: >-
+      {% if trigger.id == 'zha_event' %}
+        {{ 'zha' in integration_type }}
+      {% elif trigger.id == 'z2m_action' %}
+        {{ 'z2m' in integration_type }}
+      {% else %}
+        true
+      {% endif %}
+  # Skip Z2M 'press' events - we only act on 'press_release' and 'hold_release'
+  # This prevents double-triggering since press is always followed by press_release or hold_release
+  - alias: Skip Z2M press-only events
+    condition: template
+    value_template: >-
+      {% if trigger.id == 'z2m_action' %}
+        {{ z2m_action not in ['button_1_press', 'button_2_press', 'button_3_press', 'button_4_press'] }}
+      {% else %}
+        true
+      {% endif %}
+  # Z2M double press detection using wait_for_trigger
+  # Note: wait_for_trigger creates an independent MQTT listener that bypasses the skip condition above
+  # Triple/quad/quint press requires ZHA integration which natively supports these events
+  - alias: Z2M double press detection
+    if:
+      - "{{ trigger.id == 'z2m_action' }}"
+      - "{{ command in ['button_1_short_release', 'button_2_short_release', 'button_3_short_release', 'button_4_short_release'] }}"
+    then:
+      - variables:
+          detected_button: "{{ button_num }}"
+      - alias: Wait for second press
+        wait_for_trigger:
+          - trigger: mqtt
+            topic: "{{ z2m_base_topic ~ '/' ~ z2m_device_name }}"
+            payload: "button_{{ button_num }}_press"
+            value_template: "{{ value_json.action }}"
+        timeout:
+          milliseconds: 300
+        continue_on_timeout: true
+      - variables:
+          command: >-
+            {% if wait.trigger is not none %}button_{{ detected_button }}_double_press
+            {% else %}button_{{ detected_button }}_short_release
+            {% endif %}
+      - alias: Consume Z2M second release after double press
+        if: "{{ wait.trigger is not none }}"
+        then:
+          - wait_for_trigger:
+              - trigger: mqtt
+                topic: "{{ z2m_base_topic ~ '/' ~ z2m_device_name }}"
+                payload: "button_{{ detected_button }}_press_release"
+                value_template: "{{ value_json.action }}"
+            timeout:
+              milliseconds: 500
+            continue_on_timeout: true
+  - alias: Update last pressed helper for button commands
+    if:
+      - "{{ command | regex_search('button_[1-4]') }}"
+    then:
+      - action: input_text.set_value
+        target:
+          entity_id: "{{ last_pressed }}"
+        data:
+          value: "{{ button_num }}"
+  - choose:
+      # ========== ADAPTIVE/SCHEDULE AUTO-ADJUST ==========
+      - conditions:
+          - "{{ trigger.id in ['adaptive_1_brightness_change', 'adaptive_1_color_change'] }}"
+          - "{{ button_1_adjustment_mode == 'adaptive' }}"
+          - "{{ button_1_light_auto_adjust }}"
+          - "{{ button_1_has_light }}"
+        sequence:
+          - repeat:
+              for_each: "{{ button_1_light_entities }}"
+              sequence:
+                - if:
+                    - "{{ is_state(repeat.item, 'on') }}"
+                  then:
+                    - action: light.turn_on
+                      target:
+                        entity_id: "{{ repeat.item }}"
+                      data:
+                        brightness_pct: "{{ button_1_brightness_pct }}"
+                        color_temp_kelvin: "{{ button_1_color_temp_kelvin }}"
+                        transition: "{{ button_1_light_auto_adjust_transition }}"
+          - stop: Adaptive 1 auto-adjust completed
+      - conditions:
+          - "{{ trigger.id == 'schedule_1_change' }}"
+          - "{{ button_1_adjustment_mode == 'schedule' }}"
+          - "{{ button_1_light_auto_adjust }}"
+          - "{{ button_1_has_light }}"
+          - "{{ button_1_schedule not in [none, '', []] }}"
+        sequence:
+          - repeat:
+              for_each: "{{ button_1_light_entities }}"
+              sequence:
+                - if:
+                    - "{{ is_state(repeat.item, 'on') }}"
+                  then:
+                    - action: light.turn_on
+                      target:
+                        entity_id: "{{ repeat.item }}"
+                      data:
+                        brightness_pct: "{{ button_1_brightness_pct }}"
+                        color_temp_kelvin: "{{ button_1_color_temp_kelvin }}"
+                        transition: "{{ button_1_light_auto_adjust_transition }}"
+          - stop: Schedule 1 auto-adjust completed
+      - conditions:
+          - "{{ trigger.id in ['adaptive_2_brightness_change', 'adaptive_2_color_change'] }}"
+          - "{{ button_2_adjustment_mode == 'adaptive' }}"
+          - "{{ button_2_light_auto_adjust }}"
+          - "{{ button_2_has_light }}"
+        sequence:
+          - repeat:
+              for_each: "{{ button_2_light_entities }}"
+              sequence:
+                - if:
+                    - "{{ is_state(repeat.item, 'on') }}"
+                  then:
+                    - action: light.turn_on
+                      target:
+                        entity_id: "{{ repeat.item }}"
+                      data:
+                        brightness_pct: "{{ button_2_brightness_pct }}"
+                        color_temp_kelvin: "{{ button_2_color_temp_kelvin }}"
+                        transition: "{{ button_2_light_auto_adjust_transition }}"
+          - stop: Adaptive 2 auto-adjust completed
+      - conditions:
+          - "{{ trigger.id == 'schedule_2_change' }}"
+          - "{{ button_2_adjustment_mode == 'schedule' }}"
+          - "{{ button_2_light_auto_adjust }}"
+          - "{{ button_2_has_light }}"
+          - "{{ button_2_schedule not in [none, '', []] }}"
+        sequence:
+          - repeat:
+              for_each: "{{ button_2_light_entities }}"
+              sequence:
+                - if:
+                    - "{{ is_state(repeat.item, 'on') }}"
+                  then:
+                    - action: light.turn_on
+                      target:
+                        entity_id: "{{ repeat.item }}"
+                      data:
+                        brightness_pct: "{{ button_2_brightness_pct }}"
+                        color_temp_kelvin: "{{ button_2_color_temp_kelvin }}"
+                        transition: "{{ button_2_light_auto_adjust_transition }}"
+          - stop: Schedule 2 auto-adjust completed
+      - conditions:
+          - "{{ trigger.id in ['adaptive_3_brightness_change', 'adaptive_3_color_change'] }}"
+          - "{{ button_3_adjustment_mode == 'adaptive' }}"
+          - "{{ button_3_light_auto_adjust }}"
+          - "{{ button_3_has_light }}"
+        sequence:
+          - repeat:
+              for_each: "{{ button_3_light_entities }}"
+              sequence:
+                - if:
+                    - "{{ is_state(repeat.item, 'on') }}"
+                  then:
+                    - action: light.turn_on
+                      target:
+                        entity_id: "{{ repeat.item }}"
+                      data:
+                        brightness_pct: "{{ button_3_brightness_pct }}"
+                        color_temp_kelvin: "{{ button_3_color_temp_kelvin }}"
+                        transition: "{{ button_3_light_auto_adjust_transition }}"
+          - stop: Adaptive 3 auto-adjust completed
+      - conditions:
+          - "{{ trigger.id == 'schedule_3_change' }}"
+          - "{{ button_3_adjustment_mode == 'schedule' }}"
+          - "{{ button_3_light_auto_adjust }}"
+          - "{{ button_3_has_light }}"
+          - "{{ button_3_schedule not in [none, '', []] }}"
+        sequence:
+          - repeat:
+              for_each: "{{ button_3_light_entities }}"
+              sequence:
+                - if:
+                    - "{{ is_state(repeat.item, 'on') }}"
+                  then:
+                    - action: light.turn_on
+                      target:
+                        entity_id: "{{ repeat.item }}"
+                      data:
+                        brightness_pct: "{{ button_3_brightness_pct }}"
+                        color_temp_kelvin: "{{ button_3_color_temp_kelvin }}"
+                        transition: "{{ button_3_light_auto_adjust_transition }}"
+          - stop: Schedule 3 auto-adjust completed
+      - conditions:
+          - "{{ trigger.id in ['adaptive_4_brightness_change', 'adaptive_4_color_change'] }}"
+          - "{{ button_4_adjustment_mode == 'adaptive' }}"
+          - "{{ button_4_light_auto_adjust }}"
+          - "{{ button_4_has_light }}"
+        sequence:
+          - repeat:
+              for_each: "{{ button_4_light_entities }}"
+              sequence:
+                - if:
+                    - "{{ is_state(repeat.item, 'on') }}"
+                  then:
+                    - action: light.turn_on
+                      target:
+                        entity_id: "{{ repeat.item }}"
+                      data:
+                        brightness_pct: "{{ button_4_brightness_pct }}"
+                        color_temp_kelvin: "{{ button_4_color_temp_kelvin }}"
+                        transition: "{{ button_4_light_auto_adjust_transition }}"
+          - stop: Adaptive 4 auto-adjust completed
+      - conditions:
+          - "{{ trigger.id == 'schedule_4_change' }}"
+          - "{{ button_4_adjustment_mode == 'schedule' }}"
+          - "{{ button_4_light_auto_adjust }}"
+          - "{{ button_4_has_light }}"
+          - "{{ button_4_schedule not in [none, '', []] }}"
+        sequence:
+          - repeat:
+              for_each: "{{ button_4_light_entities }}"
+              sequence:
+                - if:
+                    - "{{ is_state(repeat.item, 'on') }}"
+                  then:
+                    - action: light.turn_on
+                      target:
+                        entity_id: "{{ repeat.item }}"
+                      data:
+                        brightness_pct: "{{ button_4_brightness_pct }}"
+                        color_temp_kelvin: "{{ button_4_color_temp_kelvin }}"
+                        transition: "{{ button_4_light_auto_adjust_transition }}"
+          - stop: Schedule 4 auto-adjust completed
+      # ========== BUTTON 1 ==========
+      - conditions: "{{ command == 'button_1_press' }}"
+        sequence: !input button_1_press
+      - conditions: "{{ command == 'button_1_short_release' }}"
+        sequence:
+          - sequence: !input button_1_short_release
+          - if: "{{ button_1_has_light }}"
+            then:
+              - parallel:
+                  - if: "{{ 'turn_on' in button_1_short_release_light_mode }}"
+                    then:
+                      - choose:
+                          - conditions: "{{ button_1_short_release_reset_brightness and button_1_short_release_reset_color }}"
+                            sequence:
+                              - action: light.turn_on
+                                target: "{{ button_1_light }}"
+                                data:
+                                  brightness_pct: "{{ button_1_brightness_pct }}"
+                                  color_temp_kelvin: "{{ button_1_color_temp_kelvin }}"
+                                  transition: "{{ button_1_transition }}"
+                          - conditions: "{{ button_1_short_release_reset_brightness }}"
+                            sequence:
+                              - action: light.turn_on
+                                target: "{{ button_1_light }}"
+                                data:
+                                  brightness_pct: "{{ button_1_brightness_pct }}"
+                                  transition: "{{ button_1_transition }}"
+                          - conditions: "{{ button_1_short_release_reset_color }}"
+                            sequence:
+                              - action: light.turn_on
+                                target: "{{ button_1_light }}"
+                                data:
+                                  color_temp_kelvin: "{{ button_1_color_temp_kelvin }}"
+                                  transition: "{{ button_1_transition }}"
+                        default:
+                          - action: light.turn_on
+                            target: "{{ button_1_light }}"
+                            data:
+                              transition: "{{ button_1_transition }}"
+                  - if: "{{ 'turn_off' in button_1_short_release_light_mode }}"
+                    then:
+                      - action: light.turn_off
+                        target: "{{ button_1_light }}"
+                        data:
+                          transition: "{{ button_1_transition }}"
+                  - if: "{{ 'toggle' in button_1_short_release_light_mode }}"
+                    then:
+                      - choose:
+                          - conditions: "{{ button_1_short_release_reset_brightness and button_1_short_release_reset_color }}"
+                            sequence:
+                              - action: light.toggle
+                                target: "{{ button_1_light }}"
+                                data:
+                                  brightness_pct: "{{ button_1_brightness_pct }}"
+                                  color_temp_kelvin: "{{ button_1_color_temp_kelvin }}"
+                                  transition: "{{ button_1_transition }}"
+                          - conditions: "{{ button_1_short_release_reset_brightness }}"
+                            sequence:
+                              - action: light.toggle
+                                target: "{{ button_1_light }}"
+                                data:
+                                  brightness_pct: "{{ button_1_brightness_pct }}"
+                                  transition: "{{ button_1_transition }}"
+                          - conditions: "{{ button_1_short_release_reset_color }}"
+                            sequence:
+                              - action: light.toggle
+                                target: "{{ button_1_light }}"
+                                data:
+                                  color_temp_kelvin: "{{ button_1_color_temp_kelvin }}"
+                                  transition: "{{ button_1_transition }}"
+                        default:
+                          - action: light.toggle
+                            target: "{{ button_1_light }}"
+                            data:
+                              transition: "{{ button_1_transition }}"
+          - if: "{{ button_1_has_media }}"
+            then:
+              - parallel:
+                  - if: "{{ 'turn_on' in button_1_short_release_media_mode }}"
+                    then:
+                      - action: media_player.turn_on
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                  - if: "{{ 'turn_off' in button_1_short_release_media_mode }}"
+                    then:
+                      - action: media_player.turn_off
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                  - if: "{{ 'toggle' in button_1_short_release_media_mode }}"
+                    then:
+                      - action: media_player.toggle
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                  - if: "{{ 'join' in button_1_short_release_media_mode and button_1_media_leader is string and button_1_media_leader != '' }}"
+                    then:
+                      - action: media_player.join
+                        target:
+                          entity_id: "{{ button_1_media_leader }}"
+                        data:
+                          group_members: "{{ button_1_media }}"
+                  - if: "{{ 'unjoin' in button_1_short_release_media_mode }}"
+                    then:
+                      - action: media_player.unjoin
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                  - if: "{{ 'media_previous_track' in button_1_short_release_media_control }}"
+                    then:
+                      - action: media_player.media_previous_track
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                  - if: "{{ 'media_next_track' in button_1_short_release_media_control }}"
+                    then:
+                      - action: media_player.media_next_track
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                  - if: "{{ 'volume_set' in button_1_short_release_media_control }}"
+                    then:
+                      - action: media_player.volume_set
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                        data:
+                          volume_level: "{{ (button_1_volume | default(35)) / 100 }}"
+      - conditions: "{{ command == 'button_1_hold' }}"
+        sequence: !input button_1_hold
+      - conditions: "{{ command == 'button_1_long_release' }}"
+        sequence:
+          - sequence: !input button_1_long_release
+          - if: "{{ button_1_has_light }}"
+            then:
+              - parallel:
+                  - if: "{{ 'turn_on' in button_1_long_release_light_mode }}"
+                    then:
+                      - choose:
+                          - conditions: "{{ button_1_long_release_reset_brightness and button_1_long_release_reset_color }}"
+                            sequence:
+                              - action: light.turn_on
+                                target: "{{ button_1_light }}"
+                                data:
+                                  brightness_pct: "{{ button_1_brightness_pct }}"
+                                  color_temp_kelvin: "{{ button_1_color_temp_kelvin }}"
+                                  transition: "{{ button_1_transition }}"
+                          - conditions: "{{ button_1_long_release_reset_brightness }}"
+                            sequence:
+                              - action: light.turn_on
+                                target: "{{ button_1_light }}"
+                                data:
+                                  brightness_pct: "{{ button_1_brightness_pct }}"
+                                  transition: "{{ button_1_transition }}"
+                          - conditions: "{{ button_1_long_release_reset_color }}"
+                            sequence:
+                              - action: light.turn_on
+                                target: "{{ button_1_light }}"
+                                data:
+                                  color_temp_kelvin: "{{ button_1_color_temp_kelvin }}"
+                                  transition: "{{ button_1_transition }}"
+                        default:
+                          - action: light.turn_on
+                            target: "{{ button_1_light }}"
+                            data:
+                              transition: "{{ button_1_transition }}"
+                  - if: "{{ 'turn_off' in button_1_long_release_light_mode }}"
+                    then:
+                      - action: light.turn_off
+                        target: "{{ button_1_light }}"
+                        data:
+                          transition: "{{ button_1_transition }}"
+                  - if: "{{ 'toggle' in button_1_long_release_light_mode }}"
+                    then:
+                      - choose:
+                          - conditions: "{{ button_1_long_release_reset_brightness and button_1_long_release_reset_color }}"
+                            sequence:
+                              - action: light.toggle
+                                target: "{{ button_1_light }}"
+                                data:
+                                  brightness_pct: "{{ button_1_brightness_pct }}"
+                                  color_temp_kelvin: "{{ button_1_color_temp_kelvin }}"
+                                  transition: "{{ button_1_transition }}"
+                          - conditions: "{{ button_1_long_release_reset_brightness }}"
+                            sequence:
+                              - action: light.toggle
+                                target: "{{ button_1_light }}"
+                                data:
+                                  brightness_pct: "{{ button_1_brightness_pct }}"
+                                  transition: "{{ button_1_transition }}"
+                          - conditions: "{{ button_1_long_release_reset_color }}"
+                            sequence:
+                              - action: light.toggle
+                                target: "{{ button_1_light }}"
+                                data:
+                                  color_temp_kelvin: "{{ button_1_color_temp_kelvin }}"
+                                  transition: "{{ button_1_transition }}"
+                        default:
+                          - action: light.toggle
+                            target: "{{ button_1_light }}"
+                            data:
+                              transition: "{{ button_1_transition }}"
+          - if: "{{ button_1_has_media }}"
+            then:
+              - parallel:
+                  - if: "{{ 'turn_on' in button_1_long_release_media_mode }}"
+                    then:
+                      - action: media_player.turn_on
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                  - if: "{{ 'turn_off' in button_1_long_release_media_mode }}"
+                    then:
+                      - action: media_player.turn_off
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                  - if: "{{ 'toggle' in button_1_long_release_media_mode }}"
+                    then:
+                      - action: media_player.toggle
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                  - if: "{{ 'join' in button_1_long_release_media_mode and button_1_media_leader is string and button_1_media_leader != '' }}"
+                    then:
+                      - action: media_player.join
+                        target:
+                          entity_id: "{{ button_1_media_leader }}"
+                        data:
+                          group_members: "{{ button_1_media }}"
+                  - if: "{{ 'unjoin' in button_1_long_release_media_mode }}"
+                    then:
+                      - action: media_player.unjoin
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                  - if: "{{ 'media_previous_track' in button_1_long_release_media_control }}"
+                    then:
+                      - action: media_player.media_previous_track
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                  - if: "{{ 'media_next_track' in button_1_long_release_media_control }}"
+                    then:
+                      - action: media_player.media_next_track
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                  - if: "{{ 'volume_set' in button_1_long_release_media_control }}"
+                    then:
+                      - action: media_player.volume_set
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                        data:
+                          volume_level: "{{ (button_1_volume | default(35)) / 100 }}"
+      - conditions: "{{ command == 'button_1_double_press' }}"
+        sequence:
+          - sequence: !input button_1_double
+          - if: "{{ button_1_has_media }}"
+            then:
+              - parallel:
+                  - if: "{{ 'turn_on' in button_1_double_media_mode }}"
+                    then:
+                      - action: media_player.turn_on
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                  - if: "{{ 'turn_off' in button_1_double_media_mode }}"
+                    then:
+                      - action: media_player.turn_off
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                  - if: "{{ 'toggle' in button_1_double_media_mode }}"
+                    then:
+                      - action: media_player.toggle
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                  - if: "{{ 'join' in button_1_double_media_mode and button_1_media_leader is string and button_1_media_leader != '' }}"
+                    then:
+                      - action: media_player.join
+                        target:
+                          entity_id: "{{ button_1_media_leader }}"
+                        data:
+                          group_members: "{{ button_1_media }}"
+                  - if: "{{ 'unjoin' in button_1_double_media_mode }}"
+                    then:
+                      - action: media_player.unjoin
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                  - if: "{{ 'media_previous_track' in button_1_double_media_control }}"
+                    then:
+                      - action: media_player.media_previous_track
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                  - if: "{{ 'media_next_track' in button_1_double_media_control }}"
+                    then:
+                      - action: media_player.media_next_track
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                  - if: "{{ 'volume_set' in button_1_double_media_control }}"
+                    then:
+                      - action: media_player.volume_set
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                        data:
+                          volume_level: "{{ (button_1_volume | default(35)) / 100 }}"
+      - conditions: "{{ command == 'button_1_triple_press' }}"
+        sequence:
+          - sequence: !input button_1_triple
+          - if: "{{ button_1_has_media }}"
+            then:
+              - parallel:
+                  - if: "{{ 'turn_on' in button_1_triple_media_mode }}"
+                    then:
+                      - action: media_player.turn_on
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                  - if: "{{ 'turn_off' in button_1_triple_media_mode }}"
+                    then:
+                      - action: media_player.turn_off
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                  - if: "{{ 'toggle' in button_1_triple_media_mode }}"
+                    then:
+                      - action: media_player.toggle
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                  - if: "{{ 'join' in button_1_triple_media_mode and button_1_media_leader is string and button_1_media_leader != '' }}"
+                    then:
+                      - action: media_player.join
+                        target:
+                          entity_id: "{{ button_1_media_leader }}"
+                        data:
+                          group_members: "{{ button_1_media }}"
+                  - if: "{{ 'unjoin' in button_1_triple_media_mode }}"
+                    then:
+                      - action: media_player.unjoin
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                  - if: "{{ 'media_previous_track' in button_1_triple_media_control }}"
+                    then:
+                      - action: media_player.media_previous_track
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                  - if: "{{ 'media_next_track' in button_1_triple_media_control }}"
+                    then:
+                      - action: media_player.media_next_track
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                  - if: "{{ 'volume_set' in button_1_triple_media_control }}"
+                    then:
+                      - action: media_player.volume_set
+                        target:
+                          entity_id: "{{ button_1_media }}"
+                        data:
+                          volume_level: "{{ (button_1_volume | default(35)) / 100 }}"
+      - conditions: "{{ command == 'button_1_quadruple_press' }}"
+        sequence: !input button_1_quadruple
+      - conditions: "{{ command == 'button_1_quintuple_press' }}"
+        sequence: !input button_1_quintuple
+      - conditions: "{{ rotate_left and states(last_pressed) == '1' }}"
+        sequence:
+          - sequence: !input button_1_rotate_left
+          - if: "{{ button_1_has_light and 'dim' in button_1_rotate_light_mode }}"
+            then:
+              - action: light.turn_on
+                target: "{{ button_1_light }}"
+                data:
+                  brightness_step: "-{{ (step_size | int(0) * button_1_step_size / 10) | int }}"
+                  transition: "{{ button_1_transition }}"
+          - if: "{{ button_1_has_media and 'volume' in button_1_rotate_media_mode }}"
+            then:
+              - action: media_player.volume_set
+                target:
+                  entity_id: "{{ button_1_media }}"
+                data:
+                  volume_level: "{{ [0, button_1_current_volume - (step_size | int(0) / 8 / 100)] | max }}"
+      - conditions: "{{ rotate_right and states(last_pressed) == '1' }}"
+        sequence:
+          - sequence: !input button_1_rotate_right
+          - if: "{{ button_1_has_light and 'dim' in button_1_rotate_light_mode }}"
+            then:
+              - action: light.turn_on
+                target: "{{ button_1_light }}"
+                data:
+                  brightness_step: "{{ (step_size | int(0) * button_1_step_size / 10) | int }}"
+                  transition: "{{ button_1_transition }}"
+          - if: "{{ button_1_has_media and 'volume' in button_1_rotate_media_mode }}"
+            then:
+              - action: media_player.volume_set
+                target:
+                  entity_id: "{{ button_1_media }}"
+                data:
+                  volume_level: "{{ [1, button_1_current_volume + (step_size | int(0) / 8 / 100)] | min }}"
+      # ========== BUTTON 2 ==========
+      - conditions: "{{ command == 'button_2_press' }}"
+        sequence: !input button_2_press
+      - conditions: "{{ command == 'button_2_short_release' }}"
+        sequence:
+          - sequence: !input button_2_short_release
+          - if: "{{ button_2_has_light }}"
+            then:
+              - parallel:
+                  - if: "{{ 'turn_on' in button_2_short_release_light_mode }}"
+                    then:
+                      - choose:
+                          - conditions: "{{ button_2_short_release_reset_brightness and button_2_short_release_reset_color }}"
+                            sequence:
+                              - action: light.turn_on
+                                target: "{{ button_2_light }}"
+                                data:
+                                  brightness_pct: "{{ button_2_brightness_pct }}"
+                                  color_temp_kelvin: "{{ button_2_color_temp_kelvin }}"
+                                  transition: "{{ button_2_transition }}"
+                          - conditions: "{{ button_2_short_release_reset_brightness }}"
+                            sequence:
+                              - action: light.turn_on
+                                target: "{{ button_2_light }}"
+                                data:
+                                  brightness_pct: "{{ button_2_brightness_pct }}"
+                                  transition: "{{ button_2_transition }}"
+                          - conditions: "{{ button_2_short_release_reset_color }}"
+                            sequence:
+                              - action: light.turn_on
+                                target: "{{ button_2_light }}"
+                                data:
+                                  color_temp_kelvin: "{{ button_2_color_temp_kelvin }}"
+                                  transition: "{{ button_2_transition }}"
+                        default:
+                          - action: light.turn_on
+                            target: "{{ button_2_light }}"
+                            data:
+                              transition: "{{ button_2_transition }}"
+                  - if: "{{ 'turn_off' in button_2_short_release_light_mode }}"
+                    then:
+                      - action: light.turn_off
+                        target: "{{ button_2_light }}"
+                        data:
+                          transition: "{{ button_2_transition }}"
+                  - if: "{{ 'toggle' in button_2_short_release_light_mode }}"
+                    then:
+                      - choose:
+                          - conditions: "{{ button_2_short_release_reset_brightness and button_2_short_release_reset_color }}"
+                            sequence:
+                              - action: light.toggle
+                                target: "{{ button_2_light }}"
+                                data:
+                                  brightness_pct: "{{ button_2_brightness_pct }}"
+                                  color_temp_kelvin: "{{ button_2_color_temp_kelvin }}"
+                                  transition: "{{ button_2_transition }}"
+                          - conditions: "{{ button_2_short_release_reset_brightness }}"
+                            sequence:
+                              - action: light.toggle
+                                target: "{{ button_2_light }}"
+                                data:
+                                  brightness_pct: "{{ button_2_brightness_pct }}"
+                                  transition: "{{ button_2_transition }}"
+                          - conditions: "{{ button_2_short_release_reset_color }}"
+                            sequence:
+                              - action: light.toggle
+                                target: "{{ button_2_light }}"
+                                data:
+                                  color_temp_kelvin: "{{ button_2_color_temp_kelvin }}"
+                                  transition: "{{ button_2_transition }}"
+                        default:
+                          - action: light.toggle
+                            target: "{{ button_2_light }}"
+                            data:
+                              transition: "{{ button_2_transition }}"
+          - if: "{{ button_2_has_media }}"
+            then:
+              - parallel:
+                  - if: "{{ 'turn_on' in button_2_short_release_media_mode }}"
+                    then:
+                      - action: media_player.turn_on
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                  - if: "{{ 'turn_off' in button_2_short_release_media_mode }}"
+                    then:
+                      - action: media_player.turn_off
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                  - if: "{{ 'toggle' in button_2_short_release_media_mode }}"
+                    then:
+                      - action: media_player.toggle
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                  - if: "{{ 'join' in button_2_short_release_media_mode and button_2_media_leader is string and button_2_media_leader != '' }}"
+                    then:
+                      - action: media_player.join
+                        target:
+                          entity_id: "{{ button_2_media_leader }}"
+                        data:
+                          group_members: "{{ button_2_media }}"
+                  - if: "{{ 'unjoin' in button_2_short_release_media_mode }}"
+                    then:
+                      - action: media_player.unjoin
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                  - if: "{{ 'media_previous_track' in button_2_short_release_media_control }}"
+                    then:
+                      - action: media_player.media_previous_track
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                  - if: "{{ 'media_next_track' in button_2_short_release_media_control }}"
+                    then:
+                      - action: media_player.media_next_track
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                  - if: "{{ 'volume_set' in button_2_short_release_media_control }}"
+                    then:
+                      - action: media_player.volume_set
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                        data:
+                          volume_level: "{{ (button_2_volume | default(35)) / 100 }}"
+      - conditions: "{{ command == 'button_2_hold' }}"
+        sequence: !input button_2_hold
+      - conditions: "{{ command == 'button_2_long_release' }}"
+        sequence:
+          - sequence: !input button_2_long_release
+          - if: "{{ button_2_has_light }}"
+            then:
+              - parallel:
+                  - if: "{{ 'turn_on' in button_2_long_release_light_mode }}"
+                    then:
+                      - choose:
+                          - conditions: "{{ button_2_long_release_reset_brightness and button_2_long_release_reset_color }}"
+                            sequence:
+                              - action: light.turn_on
+                                target: "{{ button_2_light }}"
+                                data:
+                                  brightness_pct: "{{ button_2_brightness_pct }}"
+                                  color_temp_kelvin: "{{ button_2_color_temp_kelvin }}"
+                                  transition: "{{ button_2_transition }}"
+                          - conditions: "{{ button_2_long_release_reset_brightness }}"
+                            sequence:
+                              - action: light.turn_on
+                                target: "{{ button_2_light }}"
+                                data:
+                                  brightness_pct: "{{ button_2_brightness_pct }}"
+                                  transition: "{{ button_2_transition }}"
+                          - conditions: "{{ button_2_long_release_reset_color }}"
+                            sequence:
+                              - action: light.turn_on
+                                target: "{{ button_2_light }}"
+                                data:
+                                  color_temp_kelvin: "{{ button_2_color_temp_kelvin }}"
+                                  transition: "{{ button_2_transition }}"
+                        default:
+                          - action: light.turn_on
+                            target: "{{ button_2_light }}"
+                            data:
+                              transition: "{{ button_2_transition }}"
+                  - if: "{{ 'turn_off' in button_2_long_release_light_mode }}"
+                    then:
+                      - action: light.turn_off
+                        target: "{{ button_2_light }}"
+                        data:
+                          transition: "{{ button_2_transition }}"
+                  - if: "{{ 'toggle' in button_2_long_release_light_mode }}"
+                    then:
+                      - choose:
+                          - conditions: "{{ button_2_long_release_reset_brightness and button_2_long_release_reset_color }}"
+                            sequence:
+                              - action: light.toggle
+                                target: "{{ button_2_light }}"
+                                data:
+                                  brightness_pct: "{{ button_2_brightness_pct }}"
+                                  color_temp_kelvin: "{{ button_2_color_temp_kelvin }}"
+                                  transition: "{{ button_2_transition }}"
+                          - conditions: "{{ button_2_long_release_reset_brightness }}"
+                            sequence:
+                              - action: light.toggle
+                                target: "{{ button_2_light }}"
+                                data:
+                                  brightness_pct: "{{ button_2_brightness_pct }}"
+                                  transition: "{{ button_2_transition }}"
+                          - conditions: "{{ button_2_long_release_reset_color }}"
+                            sequence:
+                              - action: light.toggle
+                                target: "{{ button_2_light }}"
+                                data:
+                                  color_temp_kelvin: "{{ button_2_color_temp_kelvin }}"
+                                  transition: "{{ button_2_transition }}"
+                        default:
+                          - action: light.toggle
+                            target: "{{ button_2_light }}"
+                            data:
+                              transition: "{{ button_2_transition }}"
+          - if: "{{ button_2_has_media }}"
+            then:
+              - parallel:
+                  - if: "{{ 'turn_on' in button_2_long_release_media_mode }}"
+                    then:
+                      - action: media_player.turn_on
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                  - if: "{{ 'turn_off' in button_2_long_release_media_mode }}"
+                    then:
+                      - action: media_player.turn_off
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                  - if: "{{ 'toggle' in button_2_long_release_media_mode }}"
+                    then:
+                      - action: media_player.toggle
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                  - if: "{{ 'join' in button_2_long_release_media_mode and button_2_media_leader is string and button_2_media_leader != '' }}"
+                    then:
+                      - action: media_player.join
+                        target:
+                          entity_id: "{{ button_2_media_leader }}"
+                        data:
+                          group_members: "{{ button_2_media }}"
+                  - if: "{{ 'unjoin' in button_2_long_release_media_mode }}"
+                    then:
+                      - action: media_player.unjoin
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                  - if: "{{ 'media_previous_track' in button_2_long_release_media_control }}"
+                    then:
+                      - action: media_player.media_previous_track
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                  - if: "{{ 'media_next_track' in button_2_long_release_media_control }}"
+                    then:
+                      - action: media_player.media_next_track
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                  - if: "{{ 'volume_set' in button_2_long_release_media_control }}"
+                    then:
+                      - action: media_player.volume_set
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                        data:
+                          volume_level: "{{ (button_2_volume | default(35)) / 100 }}"
+      - conditions: "{{ command == 'button_2_double_press' }}"
+        sequence:
+          - sequence: !input button_2_double
+          - if: "{{ button_2_has_media }}"
+            then:
+              - parallel:
+                  - if: "{{ 'turn_on' in button_2_double_media_mode }}"
+                    then:
+                      - action: media_player.turn_on
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                  - if: "{{ 'turn_off' in button_2_double_media_mode }}"
+                    then:
+                      - action: media_player.turn_off
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                  - if: "{{ 'toggle' in button_2_double_media_mode }}"
+                    then:
+                      - action: media_player.toggle
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                  - if: "{{ 'join' in button_2_double_media_mode and button_2_media_leader is string and button_2_media_leader != '' }}"
+                    then:
+                      - action: media_player.join
+                        target:
+                          entity_id: "{{ button_2_media_leader }}"
+                        data:
+                          group_members: "{{ button_2_media }}"
+                  - if: "{{ 'unjoin' in button_2_double_media_mode }}"
+                    then:
+                      - action: media_player.unjoin
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                  - if: "{{ 'media_previous_track' in button_2_double_media_control }}"
+                    then:
+                      - action: media_player.media_previous_track
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                  - if: "{{ 'media_next_track' in button_2_double_media_control }}"
+                    then:
+                      - action: media_player.media_next_track
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                  - if: "{{ 'volume_set' in button_2_double_media_control }}"
+                    then:
+                      - action: media_player.volume_set
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                        data:
+                          volume_level: "{{ (button_2_volume | default(35)) / 100 }}"
+      - conditions: "{{ command == 'button_2_triple_press' }}"
+        sequence:
+          - sequence: !input button_2_triple
+          - if: "{{ button_2_has_media }}"
+            then:
+              - parallel:
+                  - if: "{{ 'turn_on' in button_2_triple_media_mode }}"
+                    then:
+                      - action: media_player.turn_on
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                  - if: "{{ 'turn_off' in button_2_triple_media_mode }}"
+                    then:
+                      - action: media_player.turn_off
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                  - if: "{{ 'toggle' in button_2_triple_media_mode }}"
+                    then:
+                      - action: media_player.toggle
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                  - if: "{{ 'join' in button_2_triple_media_mode and button_2_media_leader is string and button_2_media_leader != '' }}"
+                    then:
+                      - action: media_player.join
+                        target:
+                          entity_id: "{{ button_2_media_leader }}"
+                        data:
+                          group_members: "{{ button_2_media }}"
+                  - if: "{{ 'unjoin' in button_2_triple_media_mode }}"
+                    then:
+                      - action: media_player.unjoin
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                  - if: "{{ 'media_previous_track' in button_2_triple_media_control }}"
+                    then:
+                      - action: media_player.media_previous_track
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                  - if: "{{ 'media_next_track' in button_2_triple_media_control }}"
+                    then:
+                      - action: media_player.media_next_track
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                  - if: "{{ 'volume_set' in button_2_triple_media_control }}"
+                    then:
+                      - action: media_player.volume_set
+                        target:
+                          entity_id: "{{ button_2_media }}"
+                        data:
+                          volume_level: "{{ (button_2_volume | default(35)) / 100 }}"
+      - conditions: "{{ command == 'button_2_quadruple_press' }}"
+        sequence: !input button_2_quadruple
+      - conditions: "{{ command == 'button_2_quintuple_press' }}"
+        sequence: !input button_2_quintuple
+      - conditions: "{{ rotate_left and states(last_pressed) == '2' }}"
+        sequence:
+          - sequence: !input button_2_rotate_left
+          - if: "{{ button_2_has_light and 'dim' in button_2_rotate_light_mode }}"
+            then:
+              - action: light.turn_on
+                target: "{{ button_2_light }}"
+                data:
+                  brightness_step: "-{{ (step_size | int(0) * button_2_step_size / 10) | int }}"
+                  transition: "{{ button_2_transition }}"
+          - if: "{{ button_2_has_media and 'volume' in button_2_rotate_media_mode }}"
+            then:
+              - action: media_player.volume_set
+                target:
+                  entity_id: "{{ button_2_media }}"
+                data:
+                  volume_level: "{{ [0, button_2_current_volume - (step_size | int(0) / 8 / 100)] | max }}"
+      - conditions: "{{ rotate_right and states(last_pressed) == '2' }}"
+        sequence:
+          - sequence: !input button_2_rotate_right
+          - if: "{{ button_2_has_light and 'dim' in button_2_rotate_light_mode }}"
+            then:
+              - action: light.turn_on
+                target: "{{ button_2_light }}"
+                data:
+                  brightness_step: "{{ (step_size | int(0) * button_2_step_size / 10) | int }}"
+                  transition: "{{ button_2_transition }}"
+          - if: "{{ button_2_has_media and 'volume' in button_2_rotate_media_mode }}"
+            then:
+              - action: media_player.volume_set
+                target:
+                  entity_id: "{{ button_2_media }}"
+                data:
+                  volume_level: "{{ [1, button_2_current_volume + (step_size | int(0) / 8 / 100)] | min }}"
+      # ========== BUTTON 3 ==========
+      - conditions: "{{ command == 'button_3_press' }}"
+        sequence: !input button_3_press
+      - conditions: "{{ command == 'button_3_short_release' }}"
+        sequence:
+          - sequence: !input button_3_short_release
+          - if: "{{ button_3_has_light }}"
+            then:
+              - parallel:
+                  - if: "{{ 'turn_on' in button_3_short_release_light_mode }}"
+                    then:
+                      - choose:
+                          - conditions: "{{ button_3_short_release_reset_brightness and button_3_short_release_reset_color }}"
+                            sequence:
+                              - action: light.turn_on
+                                target: "{{ button_3_light }}"
+                                data:
+                                  brightness_pct: "{{ button_3_brightness_pct }}"
+                                  color_temp_kelvin: "{{ button_3_color_temp_kelvin }}"
+                                  transition: "{{ button_3_transition }}"
+                          - conditions: "{{ button_3_short_release_reset_brightness }}"
+                            sequence:
+                              - action: light.turn_on
+                                target: "{{ button_3_light }}"
+                                data:
+                                  brightness_pct: "{{ button_3_brightness_pct }}"
+                                  transition: "{{ button_3_transition }}"
+                          - conditions: "{{ button_3_short_release_reset_color }}"
+                            sequence:
+                              - action: light.turn_on
+                                target: "{{ button_3_light }}"
+                                data:
+                                  color_temp_kelvin: "{{ button_3_color_temp_kelvin }}"
+                                  transition: "{{ button_3_transition }}"
+                        default:
+                          - action: light.turn_on
+                            target: "{{ button_3_light }}"
+                            data:
+                              transition: "{{ button_3_transition }}"
+                  - if: "{{ 'turn_off' in button_3_short_release_light_mode }}"
+                    then:
+                      - action: light.turn_off
+                        target: "{{ button_3_light }}"
+                        data:
+                          transition: "{{ button_3_transition }}"
+                  - if: "{{ 'toggle' in button_3_short_release_light_mode }}"
+                    then:
+                      - choose:
+                          - conditions: "{{ button_3_short_release_reset_brightness and button_3_short_release_reset_color }}"
+                            sequence:
+                              - action: light.toggle
+                                target: "{{ button_3_light }}"
+                                data:
+                                  brightness_pct: "{{ button_3_brightness_pct }}"
+                                  color_temp_kelvin: "{{ button_3_color_temp_kelvin }}"
+                                  transition: "{{ button_3_transition }}"
+                          - conditions: "{{ button_3_short_release_reset_brightness }}"
+                            sequence:
+                              - action: light.toggle
+                                target: "{{ button_3_light }}"
+                                data:
+                                  brightness_pct: "{{ button_3_brightness_pct }}"
+                                  transition: "{{ button_3_transition }}"
+                          - conditions: "{{ button_3_short_release_reset_color }}"
+                            sequence:
+                              - action: light.toggle
+                                target: "{{ button_3_light }}"
+                                data:
+                                  color_temp_kelvin: "{{ button_3_color_temp_kelvin }}"
+                                  transition: "{{ button_3_transition }}"
+                        default:
+                          - action: light.toggle
+                            target: "{{ button_3_light }}"
+                            data:
+                              transition: "{{ button_3_transition }}"
+          - if: "{{ button_3_has_media }}"
+            then:
+              - parallel:
+                  - if: "{{ 'turn_on' in button_3_short_release_media_mode }}"
+                    then:
+                      - action: media_player.turn_on
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                  - if: "{{ 'turn_off' in button_3_short_release_media_mode }}"
+                    then:
+                      - action: media_player.turn_off
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                  - if: "{{ 'toggle' in button_3_short_release_media_mode }}"
+                    then:
+                      - action: media_player.toggle
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                  - if: "{{ 'join' in button_3_short_release_media_mode and button_3_media_leader is string and button_3_media_leader != '' }}"
+                    then:
+                      - action: media_player.join
+                        target:
+                          entity_id: "{{ button_3_media_leader }}"
+                        data:
+                          group_members: "{{ button_3_media }}"
+                  - if: "{{ 'unjoin' in button_3_short_release_media_mode }}"
+                    then:
+                      - action: media_player.unjoin
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                  - if: "{{ 'media_previous_track' in button_3_short_release_media_control }}"
+                    then:
+                      - action: media_player.media_previous_track
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                  - if: "{{ 'media_next_track' in button_3_short_release_media_control }}"
+                    then:
+                      - action: media_player.media_next_track
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                  - if: "{{ 'volume_set' in button_3_short_release_media_control }}"
+                    then:
+                      - action: media_player.volume_set
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                        data:
+                          volume_level: "{{ (button_3_volume | default(35)) / 100 }}"
+      - conditions: "{{ command == 'button_3_hold' }}"
+        sequence: !input button_3_hold
+      - conditions: "{{ command == 'button_3_long_release' }}"
+        sequence:
+          - sequence: !input button_3_long_release
+          - if: "{{ button_3_has_light }}"
+            then:
+              - parallel:
+                  - if: "{{ 'turn_on' in button_3_long_release_light_mode }}"
+                    then:
+                      - choose:
+                          - conditions: "{{ button_3_long_release_reset_brightness and button_3_long_release_reset_color }}"
+                            sequence:
+                              - action: light.turn_on
+                                target: "{{ button_3_light }}"
+                                data:
+                                  brightness_pct: "{{ button_3_brightness_pct }}"
+                                  color_temp_kelvin: "{{ button_3_color_temp_kelvin }}"
+                                  transition: "{{ button_3_transition }}"
+                          - conditions: "{{ button_3_long_release_reset_brightness }}"
+                            sequence:
+                              - action: light.turn_on
+                                target: "{{ button_3_light }}"
+                                data:
+                                  brightness_pct: "{{ button_3_brightness_pct }}"
+                                  transition: "{{ button_3_transition }}"
+                          - conditions: "{{ button_3_long_release_reset_color }}"
+                            sequence:
+                              - action: light.turn_on
+                                target: "{{ button_3_light }}"
+                                data:
+                                  color_temp_kelvin: "{{ button_3_color_temp_kelvin }}"
+                                  transition: "{{ button_3_transition }}"
+                        default:
+                          - action: light.turn_on
+                            target: "{{ button_3_light }}"
+                            data:
+                              transition: "{{ button_3_transition }}"
+                  - if: "{{ 'turn_off' in button_3_long_release_light_mode }}"
+                    then:
+                      - action: light.turn_off
+                        target: "{{ button_3_light }}"
+                        data:
+                          transition: "{{ button_3_transition }}"
+                  - if: "{{ 'toggle' in button_3_long_release_light_mode }}"
+                    then:
+                      - choose:
+                          - conditions: "{{ button_3_long_release_reset_brightness and button_3_long_release_reset_color }}"
+                            sequence:
+                              - action: light.toggle
+                                target: "{{ button_3_light }}"
+                                data:
+                                  brightness_pct: "{{ button_3_brightness_pct }}"
+                                  color_temp_kelvin: "{{ button_3_color_temp_kelvin }}"
+                                  transition: "{{ button_3_transition }}"
+                          - conditions: "{{ button_3_long_release_reset_brightness }}"
+                            sequence:
+                              - action: light.toggle
+                                target: "{{ button_3_light }}"
+                                data:
+                                  brightness_pct: "{{ button_3_brightness_pct }}"
+                                  transition: "{{ button_3_transition }}"
+                          - conditions: "{{ button_3_long_release_reset_color }}"
+                            sequence:
+                              - action: light.toggle
+                                target: "{{ button_3_light }}"
+                                data:
+                                  color_temp_kelvin: "{{ button_3_color_temp_kelvin }}"
+                                  transition: "{{ button_3_transition }}"
+                        default:
+                          - action: light.toggle
+                            target: "{{ button_3_light }}"
+                            data:
+                              transition: "{{ button_3_transition }}"
+          - if: "{{ button_3_has_media }}"
+            then:
+              - parallel:
+                  - if: "{{ 'turn_on' in button_3_long_release_media_mode }}"
+                    then:
+                      - action: media_player.turn_on
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                  - if: "{{ 'turn_off' in button_3_long_release_media_mode }}"
+                    then:
+                      - action: media_player.turn_off
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                  - if: "{{ 'toggle' in button_3_long_release_media_mode }}"
+                    then:
+                      - action: media_player.toggle
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                  - if: "{{ 'join' in button_3_long_release_media_mode and button_3_media_leader is string and button_3_media_leader != '' }}"
+                    then:
+                      - action: media_player.join
+                        target:
+                          entity_id: "{{ button_3_media_leader }}"
+                        data:
+                          group_members: "{{ button_3_media }}"
+                  - if: "{{ 'unjoin' in button_3_long_release_media_mode }}"
+                    then:
+                      - action: media_player.unjoin
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                  - if: "{{ 'media_previous_track' in button_3_long_release_media_control }}"
+                    then:
+                      - action: media_player.media_previous_track
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                  - if: "{{ 'media_next_track' in button_3_long_release_media_control }}"
+                    then:
+                      - action: media_player.media_next_track
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                  - if: "{{ 'volume_set' in button_3_long_release_media_control }}"
+                    then:
+                      - action: media_player.volume_set
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                        data:
+                          volume_level: "{{ (button_3_volume | default(35)) / 100 }}"
+      - conditions: "{{ command == 'button_3_double_press' }}"
+        sequence:
+          - sequence: !input button_3_double
+          - if: "{{ button_3_has_media }}"
+            then:
+              - parallel:
+                  - if: "{{ 'turn_on' in button_3_double_media_mode }}"
+                    then:
+                      - action: media_player.turn_on
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                  - if: "{{ 'turn_off' in button_3_double_media_mode }}"
+                    then:
+                      - action: media_player.turn_off
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                  - if: "{{ 'toggle' in button_3_double_media_mode }}"
+                    then:
+                      - action: media_player.toggle
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                  - if: "{{ 'join' in button_3_double_media_mode and button_3_media_leader is string and button_3_media_leader != '' }}"
+                    then:
+                      - action: media_player.join
+                        target:
+                          entity_id: "{{ button_3_media_leader }}"
+                        data:
+                          group_members: "{{ button_3_media }}"
+                  - if: "{{ 'unjoin' in button_3_double_media_mode }}"
+                    then:
+                      - action: media_player.unjoin
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                  - if: "{{ 'media_previous_track' in button_3_double_media_control }}"
+                    then:
+                      - action: media_player.media_previous_track
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                  - if: "{{ 'media_next_track' in button_3_double_media_control }}"
+                    then:
+                      - action: media_player.media_next_track
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                  - if: "{{ 'volume_set' in button_3_double_media_control }}"
+                    then:
+                      - action: media_player.volume_set
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                        data:
+                          volume_level: "{{ (button_3_volume | default(35)) / 100 }}"
+      - conditions: "{{ command == 'button_3_triple_press' }}"
+        sequence:
+          - sequence: !input button_3_triple
+          - if: "{{ button_3_has_media }}"
+            then:
+              - parallel:
+                  - if: "{{ 'turn_on' in button_3_triple_media_mode }}"
+                    then:
+                      - action: media_player.turn_on
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                  - if: "{{ 'turn_off' in button_3_triple_media_mode }}"
+                    then:
+                      - action: media_player.turn_off
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                  - if: "{{ 'toggle' in button_3_triple_media_mode }}"
+                    then:
+                      - action: media_player.toggle
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                  - if: "{{ 'join' in button_3_triple_media_mode and button_3_media_leader is string and button_3_media_leader != '' }}"
+                    then:
+                      - action: media_player.join
+                        target:
+                          entity_id: "{{ button_3_media_leader }}"
+                        data:
+                          group_members: "{{ button_3_media }}"
+                  - if: "{{ 'unjoin' in button_3_triple_media_mode }}"
+                    then:
+                      - action: media_player.unjoin
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                  - if: "{{ 'media_previous_track' in button_3_triple_media_control }}"
+                    then:
+                      - action: media_player.media_previous_track
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                  - if: "{{ 'media_next_track' in button_3_triple_media_control }}"
+                    then:
+                      - action: media_player.media_next_track
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                  - if: "{{ 'volume_set' in button_3_triple_media_control }}"
+                    then:
+                      - action: media_player.volume_set
+                        target:
+                          entity_id: "{{ button_3_media }}"
+                        data:
+                          volume_level: "{{ (button_3_volume | default(35)) / 100 }}"
+      - conditions: "{{ command == 'button_3_quadruple_press' }}"
+        sequence: !input button_3_quadruple
+      - conditions: "{{ command == 'button_3_quintuple_press' }}"
+        sequence: !input button_3_quintuple
+      - conditions: "{{ rotate_left and states(last_pressed) == '3' }}"
+        sequence:
+          - sequence: !input button_3_rotate_left
+          - if: "{{ button_3_has_light and 'dim' in button_3_rotate_light_mode }}"
+            then:
+              - action: light.turn_on
+                target: "{{ button_3_light }}"
+                data:
+                  brightness_step: "-{{ (step_size | int(0) * button_3_step_size / 10) | int }}"
+                  transition: "{{ button_3_transition }}"
+          - if: "{{ button_3_has_media and 'volume' in button_3_rotate_media_mode }}"
+            then:
+              - action: media_player.volume_set
+                target:
+                  entity_id: "{{ button_3_media }}"
+                data:
+                  volume_level: "{{ [0, button_3_current_volume - (step_size | int(0) / 8 / 100)] | max }}"
+      - conditions: "{{ rotate_right and states(last_pressed) == '3' }}"
+        sequence:
+          - sequence: !input button_3_rotate_right
+          - if: "{{ button_3_has_light and 'dim' in button_3_rotate_light_mode }}"
+            then:
+              - action: light.turn_on
+                target: "{{ button_3_light }}"
+                data:
+                  brightness_step: "{{ (step_size | int(0) * button_3_step_size / 10) | int }}"
+                  transition: "{{ button_3_transition }}"
+          - if: "{{ button_3_has_media and 'volume' in button_3_rotate_media_mode }}"
+            then:
+              - action: media_player.volume_set
+                target:
+                  entity_id: "{{ button_3_media }}"
+                data:
+                  volume_level: "{{ [1, button_3_current_volume + (step_size | int(0) / 8 / 100)] | min }}"
+      # ========== BUTTON 4 ==========
+      - conditions: "{{ command == 'button_4_press' }}"
+        sequence: !input button_4_press
+      - conditions: "{{ command == 'button_4_short_release' }}"
+        sequence:
+          - sequence: !input button_4_short_release
+          - if: "{{ button_4_has_light }}"
+            then:
+              - parallel:
+                  - if: "{{ 'turn_on' in button_4_short_release_light_mode }}"
+                    then:
+                      - choose:
+                          - conditions: "{{ button_4_short_release_reset_brightness and button_4_short_release_reset_color }}"
+                            sequence:
+                              - action: light.turn_on
+                                target: "{{ button_4_light }}"
+                                data:
+                                  brightness_pct: "{{ button_4_brightness_pct }}"
+                                  color_temp_kelvin: "{{ button_4_color_temp_kelvin }}"
+                                  transition: "{{ button_4_transition }}"
+                          - conditions: "{{ button_4_short_release_reset_brightness }}"
+                            sequence:
+                              - action: light.turn_on
+                                target: "{{ button_4_light }}"
+                                data:
+                                  brightness_pct: "{{ button_4_brightness_pct }}"
+                                  transition: "{{ button_4_transition }}"
+                          - conditions: "{{ button_4_short_release_reset_color }}"
+                            sequence:
+                              - action: light.turn_on
+                                target: "{{ button_4_light }}"
+                                data:
+                                  color_temp_kelvin: "{{ button_4_color_temp_kelvin }}"
+                                  transition: "{{ button_4_transition }}"
+                        default:
+                          - action: light.turn_on
+                            target: "{{ button_4_light }}"
+                            data:
+                              transition: "{{ button_4_transition }}"
+                  - if: "{{ 'turn_off' in button_4_short_release_light_mode }}"
+                    then:
+                      - action: light.turn_off
+                        target: "{{ button_4_light }}"
+                        data:
+                          transition: "{{ button_4_transition }}"
+                  - if: "{{ 'toggle' in button_4_short_release_light_mode }}"
+                    then:
+                      - choose:
+                          - conditions: "{{ button_4_short_release_reset_brightness and button_4_short_release_reset_color }}"
+                            sequence:
+                              - action: light.toggle
+                                target: "{{ button_4_light }}"
+                                data:
+                                  brightness_pct: "{{ button_4_brightness_pct }}"
+                                  color_temp_kelvin: "{{ button_4_color_temp_kelvin }}"
+                                  transition: "{{ button_4_transition }}"
+                          - conditions: "{{ button_4_short_release_reset_brightness }}"
+                            sequence:
+                              - action: light.toggle
+                                target: "{{ button_4_light }}"
+                                data:
+                                  brightness_pct: "{{ button_4_brightness_pct }}"
+                                  transition: "{{ button_4_transition }}"
+                          - conditions: "{{ button_4_short_release_reset_color }}"
+                            sequence:
+                              - action: light.toggle
+                                target: "{{ button_4_light }}"
+                                data:
+                                  color_temp_kelvin: "{{ button_4_color_temp_kelvin }}"
+                                  transition: "{{ button_4_transition }}"
+                        default:
+                          - action: light.toggle
+                            target: "{{ button_4_light }}"
+                            data:
+                              transition: "{{ button_4_transition }}"
+          - if: "{{ button_4_has_media }}"
+            then:
+              - parallel:
+                  - if: "{{ 'turn_on' in button_4_short_release_media_mode }}"
+                    then:
+                      - action: media_player.turn_on
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                  - if: "{{ 'turn_off' in button_4_short_release_media_mode }}"
+                    then:
+                      - action: media_player.turn_off
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                  - if: "{{ 'toggle' in button_4_short_release_media_mode }}"
+                    then:
+                      - action: media_player.toggle
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                  - if: "{{ 'join' in button_4_short_release_media_mode and button_4_media_leader is string and button_4_media_leader != '' }}"
+                    then:
+                      - action: media_player.join
+                        target:
+                          entity_id: "{{ button_4_media_leader }}"
+                        data:
+                          group_members: "{{ button_4_media }}"
+                  - if: "{{ 'unjoin' in button_4_short_release_media_mode }}"
+                    then:
+                      - action: media_player.unjoin
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                  - if: "{{ 'media_previous_track' in button_4_short_release_media_control }}"
+                    then:
+                      - action: media_player.media_previous_track
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                  - if: "{{ 'media_next_track' in button_4_short_release_media_control }}"
+                    then:
+                      - action: media_player.media_next_track
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                  - if: "{{ 'volume_set' in button_4_short_release_media_control }}"
+                    then:
+                      - action: media_player.volume_set
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                        data:
+                          volume_level: "{{ (button_4_volume | default(35)) / 100 }}"
+      - conditions: "{{ command == 'button_4_hold' }}"
+        sequence: !input button_4_hold
+      - conditions: "{{ command == 'button_4_long_release' }}"
+        sequence:
+          - sequence: !input button_4_long_release
+          - if: "{{ button_4_has_light }}"
+            then:
+              - parallel:
+                  - if: "{{ 'turn_on' in button_4_long_release_light_mode }}"
+                    then:
+                      - choose:
+                          - conditions: "{{ button_4_long_release_reset_brightness and button_4_long_release_reset_color }}"
+                            sequence:
+                              - action: light.turn_on
+                                target: "{{ button_4_light }}"
+                                data:
+                                  brightness_pct: "{{ button_4_brightness_pct }}"
+                                  color_temp_kelvin: "{{ button_4_color_temp_kelvin }}"
+                                  transition: "{{ button_4_transition }}"
+                          - conditions: "{{ button_4_long_release_reset_brightness }}"
+                            sequence:
+                              - action: light.turn_on
+                                target: "{{ button_4_light }}"
+                                data:
+                                  brightness_pct: "{{ button_4_brightness_pct }}"
+                                  transition: "{{ button_4_transition }}"
+                          - conditions: "{{ button_4_long_release_reset_color }}"
+                            sequence:
+                              - action: light.turn_on
+                                target: "{{ button_4_light }}"
+                                data:
+                                  color_temp_kelvin: "{{ button_4_color_temp_kelvin }}"
+                                  transition: "{{ button_4_transition }}"
+                        default:
+                          - action: light.turn_on
+                            target: "{{ button_4_light }}"
+                            data:
+                              transition: "{{ button_4_transition }}"
+                  - if: "{{ 'turn_off' in button_4_long_release_light_mode }}"
+                    then:
+                      - action: light.turn_off
+                        target: "{{ button_4_light }}"
+                        data:
+                          transition: "{{ button_4_transition }}"
+                  - if: "{{ 'toggle' in button_4_long_release_light_mode }}"
+                    then:
+                      - choose:
+                          - conditions: "{{ button_4_long_release_reset_brightness and button_4_long_release_reset_color }}"
+                            sequence:
+                              - action: light.toggle
+                                target: "{{ button_4_light }}"
+                                data:
+                                  brightness_pct: "{{ button_4_brightness_pct }}"
+                                  color_temp_kelvin: "{{ button_4_color_temp_kelvin }}"
+                                  transition: "{{ button_4_transition }}"
+                          - conditions: "{{ button_4_long_release_reset_brightness }}"
+                            sequence:
+                              - action: light.toggle
+                                target: "{{ button_4_light }}"
+                                data:
+                                  brightness_pct: "{{ button_4_brightness_pct }}"
+                                  transition: "{{ button_4_transition }}"
+                          - conditions: "{{ button_4_long_release_reset_color }}"
+                            sequence:
+                              - action: light.toggle
+                                target: "{{ button_4_light }}"
+                                data:
+                                  color_temp_kelvin: "{{ button_4_color_temp_kelvin }}"
+                                  transition: "{{ button_4_transition }}"
+                        default:
+                          - action: light.toggle
+                            target: "{{ button_4_light }}"
+                            data:
+                              transition: "{{ button_4_transition }}"
+          - if: "{{ button_4_has_media }}"
+            then:
+              - parallel:
+                  - if: "{{ 'turn_on' in button_4_long_release_media_mode }}"
+                    then:
+                      - action: media_player.turn_on
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                  - if: "{{ 'turn_off' in button_4_long_release_media_mode }}"
+                    then:
+                      - action: media_player.turn_off
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                  - if: "{{ 'toggle' in button_4_long_release_media_mode }}"
+                    then:
+                      - action: media_player.toggle
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                  - if: "{{ 'join' in button_4_long_release_media_mode and button_4_media_leader is string and button_4_media_leader != '' }}"
+                    then:
+                      - action: media_player.join
+                        target:
+                          entity_id: "{{ button_4_media_leader }}"
+                        data:
+                          group_members: "{{ button_4_media }}"
+                  - if: "{{ 'unjoin' in button_4_long_release_media_mode }}"
+                    then:
+                      - action: media_player.unjoin
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                  - if: "{{ 'media_previous_track' in button_4_long_release_media_control }}"
+                    then:
+                      - action: media_player.media_previous_track
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                  - if: "{{ 'media_next_track' in button_4_long_release_media_control }}"
+                    then:
+                      - action: media_player.media_next_track
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                  - if: "{{ 'volume_set' in button_4_long_release_media_control }}"
+                    then:
+                      - action: media_player.volume_set
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                        data:
+                          volume_level: "{{ (button_4_volume | default(35)) / 100 }}"
+      - conditions: "{{ command == 'button_4_double_press' }}"
+        sequence:
+          - sequence: !input button_4_double
+          - if: "{{ button_4_has_media }}"
+            then:
+              - parallel:
+                  - if: "{{ 'turn_on' in button_4_double_media_mode }}"
+                    then:
+                      - action: media_player.turn_on
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                  - if: "{{ 'turn_off' in button_4_double_media_mode }}"
+                    then:
+                      - action: media_player.turn_off
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                  - if: "{{ 'toggle' in button_4_double_media_mode }}"
+                    then:
+                      - action: media_player.toggle
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                  - if: "{{ 'join' in button_4_double_media_mode and button_4_media_leader is string and button_4_media_leader != '' }}"
+                    then:
+                      - action: media_player.join
+                        target:
+                          entity_id: "{{ button_4_media_leader }}"
+                        data:
+                          group_members: "{{ button_4_media }}"
+                  - if: "{{ 'unjoin' in button_4_double_media_mode }}"
+                    then:
+                      - action: media_player.unjoin
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                  - if: "{{ 'media_previous_track' in button_4_double_media_control }}"
+                    then:
+                      - action: media_player.media_previous_track
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                  - if: "{{ 'media_next_track' in button_4_double_media_control }}"
+                    then:
+                      - action: media_player.media_next_track
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                  - if: "{{ 'volume_set' in button_4_double_media_control }}"
+                    then:
+                      - action: media_player.volume_set
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                        data:
+                          volume_level: "{{ (button_4_volume | default(35)) / 100 }}"
+      - conditions: "{{ command == 'button_4_triple_press' }}"
+        sequence:
+          - sequence: !input button_4_triple
+          - if: "{{ button_4_has_media }}"
+            then:
+              - parallel:
+                  - if: "{{ 'turn_on' in button_4_triple_media_mode }}"
+                    then:
+                      - action: media_player.turn_on
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                  - if: "{{ 'turn_off' in button_4_triple_media_mode }}"
+                    then:
+                      - action: media_player.turn_off
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                  - if: "{{ 'toggle' in button_4_triple_media_mode }}"
+                    then:
+                      - action: media_player.toggle
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                  - if: "{{ 'join' in button_4_triple_media_mode and button_4_media_leader is string and button_4_media_leader != '' }}"
+                    then:
+                      - action: media_player.join
+                        target:
+                          entity_id: "{{ button_4_media_leader }}"
+                        data:
+                          group_members: "{{ button_4_media }}"
+                  - if: "{{ 'unjoin' in button_4_triple_media_mode }}"
+                    then:
+                      - action: media_player.unjoin
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                  - if: "{{ 'media_previous_track' in button_4_triple_media_control }}"
+                    then:
+                      - action: media_player.media_previous_track
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                  - if: "{{ 'media_next_track' in button_4_triple_media_control }}"
+                    then:
+                      - action: media_player.media_next_track
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                  - if: "{{ 'volume_set' in button_4_triple_media_control }}"
+                    then:
+                      - action: media_player.volume_set
+                        target:
+                          entity_id: "{{ button_4_media }}"
+                        data:
+                          volume_level: "{{ (button_4_volume | default(35)) / 100 }}"
+      - conditions: "{{ command == 'button_4_quadruple_press' }}"
+        sequence: !input button_4_quadruple
+      - conditions: "{{ command == 'button_4_quintuple_press' }}"
+        sequence: !input button_4_quintuple
+      - conditions: "{{ rotate_left and states(last_pressed) == '4' }}"
+        sequence:
+          - sequence: !input button_4_rotate_left
+          - if: "{{ button_4_has_light and 'dim' in button_4_rotate_light_mode }}"
+            then:
+              - action: light.turn_on
+                target: "{{ button_4_light }}"
+                data:
+                  brightness_step: "-{{ (step_size | int(0) * button_4_step_size / 10) | int }}"
+                  transition: "{{ button_4_transition }}"
+          - if: "{{ button_4_has_media and 'volume' in button_4_rotate_media_mode }}"
+            then:
+              - action: media_player.volume_set
+                target:
+                  entity_id: "{{ button_4_media }}"
+                data:
+                  volume_level: "{{ [0, button_4_current_volume - (step_size | int(0) / 8 / 100)] | max }}"
+      - conditions: "{{ rotate_right and states(last_pressed) == '4' }}"
+        sequence:
+          - sequence: !input button_4_rotate_right
+          - if: "{{ button_4_has_light and 'dim' in button_4_rotate_light_mode }}"
+            then:
+              - action: light.turn_on
+                target: "{{ button_4_light }}"
+                data:
+                  brightness_step: "{{ (step_size | int(0) * button_4_step_size / 10) | int }}"
+                  transition: "{{ button_4_transition }}"
+          - if: "{{ button_4_has_media and 'volume' in button_4_rotate_media_mode }}"
+            then:
+              - action: media_player.volume_set
+                target:
+                  entity_id: "{{ button_4_media }}"
+                data:
+                  volume_level: "{{ [1, button_4_current_volume + (step_size | int(0) / 8 / 100)] | min }}"
