@@ -1,0 +1,102 @@
+blueprint:
+  name: Media Player
+
+
+  description: |
+    # Philips Hue Tap Dial Switch 
+  domain: automation
+  homeassistant:
+    min_version: 2024.10.0
+  input:
+    zha:
+      name: Zigbee Home Automation (ZHA)
+      description: Configure ZHA integration settings.
+      icon: mdi:zigbee
+      collapsed: true
+      input:
+        zha_remote:
+          name: Remote Device (ZHA)
+          description: |
+            `optional` `device`
+
+            Select the Philips Hue Tap Dial Switch device from ZHA. Leave empty if not using ZHA.
+          default: {}
+          selector:
+            device:
+              entity:
+                - domain:
+                    - sensor
+                  device_class:
+                    - battery
+              filter:
+                - integration: zha
+                  manufacturer: Signify Netherlands B.V.
+                  model: RDM002
+              multiple: false           
+    dial_custom:
+      name: Dial - Custom Actions
+      collapsed: true
+      icon: mdi:rotate-3d-variant
+      input:
+        rotate_left:
+          name: Rotate Left
+          description: |
+            `optional` `action` `Z2M` `ZHA`
+
+            Action to run when dial is turned to the left.
+          default: []
+          selector:
+            action: {}
+        rotate_right:
+          name: Rotate Right
+          description: |
+            `optional` `action` `Z2M` `ZHA`
+
+            Action to run when dial is turned to the right.
+          default: []
+          selector:
+            action: {}
+    input:
+    my_input:
+      name: Example input
+      mulitple: true
+mode: single
+max_exceeded: silent
+
+
+variables:
+  # Integration config
+  zha_remote: !input zha_remote
+  zha_command: "{{ trigger.event.data.command if trigger.event is defined else '' }}"
+  command: >-
+    {% if zha_command != '' %}
+      {{ zha_command }}
+    {% endif %}
+  step_mode: >-
+    {% if trigger.event is defined %}
+      {{ trigger.event.data.params.step_mode | default('0') }}
+    {% endif %}
+  step_size: >-
+    {% if trigger.event is defined %}
+      {{ trigger.event.data.params.step_size | default(0) }}
+    {% elif trigger.payload_json is defined %}
+      {{ trigger.payload_json.action_step_size | default(0) }}
+    {% else %}0
+    {% endif %}
+  is_rotation: "{{ command == 'step_with_on_off' }}"
+  rotate_left: "{{ is_rotation and step_mode == 'StepMode.Down' and step_size | int(0) != 255 }}"
+  rotate_right: "{{ is_rotation and step_mode == 'StepMode.Up' and step_size | int(0) != 255 }}"
+triggers:
+  - trigger: event
+    event_type: zha_event
+    event_data:
+      device_id: !input zha_remote
+    id: zha_event
+    
+actions:
+  - choose:
+      # ========== DIAL ==========
+      - conditions: "{{ rotate_left }}"
+        sequence: !input rotate_left
+      - conditions: "{{ rotate_right }}"
+        sequence: !input rotate_right
