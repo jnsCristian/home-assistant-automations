@@ -426,6 +426,7 @@ variables:
   command: >-
     {% if zha_command != '' %}
       {{ zha_command }}
+    {% endif %}
 triggers:
   - trigger: event
     event_type: zha_event
