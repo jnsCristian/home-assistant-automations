@@ -10,8 +10,9 @@ blueprint:
   input:
     media_player:
       name: Media Player
-#       icon: mdi:zigbee
+      icon: mdi:zigbee
       collapsed: true
+      description: Configure ZHA integration settings.
       input:
         media_player_remote:
           name: Media Player
