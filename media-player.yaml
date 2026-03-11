@@ -7,21 +7,25 @@ blueprint:
   domain: automation
   homeassistant:
     min_version: 2024.10.0
-  input:
     media_player:
       name: Media Player
+      description: Configure ZHA integration settings.
       icon: mdi:zigbee
       collapsed: true
-      description: Configure ZHA integration settings.
       input:
         media_player_remote:
-          name: Media Player
+          name: Media Player (ZHA)
+          description: |
+            `optional` `device`
+
+            Select the Philips Hue Tap Dial Switch device from ZHA. Leave empty if not using ZHA.
           default: {}
           selector:
-            entity:
-              multiple: true
-              filter:
-                - device_class: tv
+            device:
+              entity:
+                - device_class:
+                    - tv
+              multiple: false  
     dial_custom:
       name: Dial - Custom Actions
       collapsed: true
