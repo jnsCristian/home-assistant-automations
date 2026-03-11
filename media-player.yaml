@@ -28,19 +28,11 @@ blueprint:
       input:
         rotate_left:
           name: Rotate Left
-          description: |
-            `optional` `action` `Z2M` `ZHA`
-
-            Action to run when dial is turned to the left.
           default: []
           selector:
             action: {}
         rotate_right:
           name: Rotate Right
-          description: |
-            `optional` `action` `Z2M` `ZHA`
-
-            Action to run when dial is turned to the right.
           default: []
           selector:
             action: {}
