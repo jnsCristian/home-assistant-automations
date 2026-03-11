@@ -422,7 +422,10 @@ variables:
   # Integration config
   integration_type: !input integration_type
   zha_remote: !input zha_remote
-  
+  zha_command: "{{ trigger.event.data.command if trigger.event is defined else '' }}"
+  command: >-
+    {% if zha_command != '' %}
+      {{ zha_command }}
 triggers:
   - trigger: event
     event_type: zha_event
