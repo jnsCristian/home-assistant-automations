@@ -308,6 +308,20 @@ variables:
     {% if zha_command != '' %}
       {{ zha_command }}
     {% endif %}
+  step_mode: >-
+    {% if trigger.event is defined %}
+      {{ trigger.event.data.params.step_mode | default('0') }}
+    {% endif %}
+  step_size: >-
+    {% if trigger.event is defined %}
+      {{ trigger.event.data.params.step_size | default(0) }}
+    {% elif trigger.payload_json is defined %}
+      {{ trigger.payload_json.action_step_size | default(0) }}
+    {% else %}0
+    {% endif %}
+  is_rotation: "{{ command == 'step_with_on_off' }}"
+  rotate_left: "{{ is_rotation and step_mode == 'StepMode.Down' and step_size | int(0) != 255 }}"
+  rotate_right: "{{ is_rotation and step_mode == 'StepMode.Up' and step_size | int(0) != 255 }}"
 triggers:
   - trigger: event
     event_type: zha_event
@@ -378,9 +392,7 @@ actions:
       - conditions: "{{ command == 'button_4_quintuple_press' }}"
         sequence: !input button_4_quintuple
       # ========== DIAL ==========
-      - conditions: "{{ command == 'rotate_left' }}"
-        sequence:
-          - sequence: !input rotate_left
-      - conditions: "{{ command == 'rotate_right' }}"
-        sequence:
-          - sequence: !input rotate_right
+      - conditions: "{{ rotate_left }}"
+        sequence: !input rotate_left
+      - conditions: "{{ rotate_right }}"
+        sequence: !input rotate_right
