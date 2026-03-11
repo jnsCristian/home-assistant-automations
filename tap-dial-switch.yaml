@@ -378,9 +378,9 @@ actions:
       - conditions: "{{ command == 'button_4_quintuple_press' }}"
         sequence: !input button_4_quintuple
       # ========== DIAL ==========
-      - conditions: "{{ rotate_left }}"
+      - conditions: "{{ command == 'rotate_left' }}"
         sequence:
           - sequence: !input rotate_left
-      - conditions: "{{ rotate_right }}"
+      - conditions: "{{ command == 'rotate_right' }}"
         sequence:
           - sequence: !input rotate_right
