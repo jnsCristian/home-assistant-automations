@@ -286,7 +286,28 @@ blueprint:
           selector:
             action: {}
 
+    dial_custom:
+      name: Dial - Custom Actions
+      collapsed: true
+      input:
+        rotate_left:
+          name: Rotate Left
+          description: |
+            `optional` `action` `Z2M` `ZHA`
 
+            Action to run when dial is turned to the left.
+          default: []
+          selector:
+            action: {}
+        rotate_right:
+          name: Rotate Right
+          description: |
+            `optional` `action` `Z2M` `ZHA`
+
+            Action to run when dial is turned to the right.
+          default: []
+          selector:
+            action: {}
 mode: single
 max_exceeded: silent
 
@@ -370,3 +391,10 @@ actions:
         sequence: !input button_4_quadruple
       - conditions: "{{ command == 'button_4_quintuple_press' }}"
         sequence: !input button_4_quintuple
+      # ========== DIAL ==========
+      - conditions: "{{ rotate_left }}"
+        sequence:
+          - sequence: !input button_1_rotate_left
+      - conditions: "{{ rotate_right }}"
+        sequence:
+          - sequence: !input button_1_rotate_right
