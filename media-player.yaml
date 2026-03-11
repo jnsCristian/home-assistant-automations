@@ -8,12 +8,12 @@ blueprint:
   homeassistant:
     min_version: 2024.10.0
   input:
-    mp:
+    media_player:
       name: Media Player
 #       icon: mdi:zigbee
       collapsed: true
       input:
-        media_player:
+        media_player_remote:
           name: Media Player
           default: {}
           selector:
@@ -102,7 +102,7 @@ triggers:
   - trigger: event
     event_type: zha_event
     event_data:
-      device_id: !input zha_remote
+      device_id: !input media_player_remote
     id: zha_event
     
 actions:
