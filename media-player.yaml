@@ -8,31 +8,19 @@ blueprint:
   homeassistant:
     min_version: 2024.10.0
   input:
-    zha:
-      name: Zigbee Home Automation (ZHA)
-      description: Configure ZHA integration settings.
-      icon: mdi:zigbee
+    mp:
+      name: Media Player
+#       icon: mdi:zigbee
       collapsed: true
       input:
-        zha_remote:
-          name: Remote Device (ZHA)
-          description: |
-            `optional` `device`
-
-            Select the Philips Hue Tap Dial Switch device from ZHA. Leave empty if not using ZHA.
+        media_player:
+          name: Media Player
           default: {}
           selector:
-            device:
-              entity:
-                - domain:
-                    - sensor
-                  device_class:
-                    - battery
+            entity:
+              multiple: true
               filter:
-                - integration: zha
-                  manufacturer: Signify Netherlands B.V.
-                  model: RDM002
-              multiple: false           
+                - device_class: tv
     dial_custom:
       name: Dial - Custom Actions
       collapsed: true
@@ -90,7 +78,7 @@ max_exceeded: silent
 
 variables:
   # Integration config
-  zha_remote: !input zha_remote
+  media_player: !input media_player
   zha_command: "{{ trigger.event.data.command if trigger.event is defined else '' }}"
   command: >-
     {% if zha_command != '' %}
