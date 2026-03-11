@@ -431,29 +431,6 @@ triggers:
     id: zha_event
     
 actions:
-  - alias: Validate integration type matches trigger
-    condition: template
-    value_template: >-
-      {% if trigger.id == 'zha_event' %}
-        {{ 'zha' in integration_type }}
-      {% elif trigger.id == 'z2m_action' %}
-        {{ 'z2m' in integration_type }}
-      {% else %}
-        true
-      {% endif %}
-  # Skip Z2M 'press' events - we only act on 'press_release' and 'hold_release'
-  # This prevents double-triggering since press is always followed by press_release or hold_release
-  - alias: Skip Z2M press-only events
-    condition: template
-    value_template: >-
-      {% if trigger.id == 'z2m_action' %}
-        {{ z2m_action not in ['button_1_press', 'button_2_press', 'button_3_press', 'button_4_press'] }}
-      {% else %}
-        true
-      {% endif %}
-  # Z2M double press detection using wait_for_trigger
-  # Note: wait_for_trigger creates an independent MQTT listener that bypasses the skip condition above
-  # Triple/quad/quint press requires ZHA integration which natively supports these events
 
   - choose:
       # ========== BUTTON 1 ==========
