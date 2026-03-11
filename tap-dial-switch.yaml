@@ -33,19 +33,19 @@ blueprint:
                   manufacturer: Signify Netherlands B.V.
                   model: RDM002
               multiple: false
-    integration_type:
-      name: Integration Type
-      description: |
-        `required`
+#     integration_type:
+#       name: Integration Type
+#       description: |
+#         `required`
 
-        Select which integration(s) to use for the Philips Hue Tap Dial Switch. You can select Z2M, ZHA, or both.
-      default: []
-      selector:
-        select:
-          options:
-            - label: Zigbee Home Automation (ZHA)
-              value: zha
-          multiple: true              
+#         Select which integration(s) to use for the Philips Hue Tap Dial Switch. You can select Z2M, ZHA, or both.
+#       default: []
+#       selector:
+#         select:
+#           options:
+#             - label: Zigbee Home Automation (ZHA)
+#               value: zha
+#           multiple: true              
     button_1_custom:
       name: Button 1 - Custom Actions
       icon: mdi:numeric-1-circle-outline
@@ -289,6 +289,7 @@ blueprint:
     dial_custom:
       name: Dial - Custom Actions
       collapsed: true
+      icon: mdi:rotate-3d-variant
       input:
         rotate_left:
           name: Rotate Left
@@ -314,7 +315,7 @@ max_exceeded: silent
 
 variables:
   # Integration config
-  integration_type: !input integration_type
+#   integration_type: !input integration_type
   zha_remote: !input zha_remote
   zha_command: "{{ trigger.event.data.command if trigger.event is defined else '' }}"
   command: >-
