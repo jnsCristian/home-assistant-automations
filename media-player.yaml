@@ -56,9 +56,34 @@ blueprint:
           default: []
           selector:
             action: {}
-    my_input:
-      name: Example input
-      mulitple: true
+    media_sources:
+      name: Media Sources
+      selector:
+        select:
+          options:
+            - label: Jellyfin
+              value: Jellyfin
+            - label: Youtube
+              value: Youtube
+            - label: Twitch
+              value: Twitch
+          multiple: true
+    gaming_sources:
+      name: Gaming Sources
+      selector:
+        select:
+          options:
+            - label: PS5 Game Console
+              value: PS5 Game Console
+          multiple: true
+    music_sources:
+      name: Gaming Sources
+      selector:
+        select:
+          options:
+            - label: Spotify - Music and Podcasts
+              value: Spotify - Music and Podcasts
+          multiple: true
 mode: single
 max_exceeded: silent
 
