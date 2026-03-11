@@ -6,16 +6,11 @@ blueprint:
   input: 
     media_player:
       name: Media Player
-      description: Configure ZHA integration settings.
       icon: mdi:television
       collapsed: true
       input:
         media_player_remote:
-          name: Media Player (ZHA) 1
-          description: |
-            `optional` `device`
-
-            Select the Philips Hue Tap Dial Switch device from ZHA. Leave empty if not using ZHA.
+          name: Media Player
           default: {}
           selector:
             entity:
