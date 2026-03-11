@@ -394,7 +394,7 @@ actions:
       # ========== DIAL ==========
       - conditions: "{{ rotate_left }}"
         sequence:
-          - sequence: !input button_1_rotate_left
+          - sequence: !input rotate_left
       - conditions: "{{ rotate_right }}"
         sequence:
-          - sequence: !input button_1_rotate_right
+          - sequence: !input rotate_right
