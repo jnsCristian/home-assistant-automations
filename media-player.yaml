@@ -1,9 +1,5 @@
 blueprint:
   name: Media Player
-
-
-  description: |
-    # Philips Hue Tap Dial Switch 
   domain: automation
   homeassistant:
     min_version: 2024.10.0
@@ -11,7 +7,7 @@ blueprint:
     media_player:
       name: Media Player
       description: Configure ZHA integration settings.
-      icon: mdi:zigbee
+      icon: mdi:television
       collapsed: true
       input:
         media_player_remote:
@@ -54,49 +50,52 @@ blueprint:
             - label: Spotify - Music and Podcasts
               value: Spotify - Music and Podcasts
           multiple: true
-    on_off:
+    on_off_inputs:
+      icon: mdi:power
       name: On/Off
       collapsed: true
       input:
-        turn_on:
+        on_input:
           name: Turn On
           default: []
           selector:
             action: {}
-        turn_off:
+        off_input:
           name: Turn Off
           default: []
           selector:
             action: {}     
-    play_pause:
+    play_pause_inputs:
+      icon: mdi:play-pause
       name: Play/Pause
       collapsed: true
       input:
-        play:
+        play_input:
           name: Play
           default: []
           selector:
             action: {}
-        pause:
+        pause_input:
           name: Pause
           default: []
           selector:
             action: {}
-    source:
+    source_inputs:
       name: Source
       collapsed: true
+      icon: mdi:television
       input:
-        media_source:
+        media_sources_input:
           name: Media
           default: []
           selector:
             action: {}
-        gaming_source:
+        gaming_sources_input:
           name: Gaming
           default: []
           selector:
             action: {}
-        music_source:
+        music_sources_input:
           name: Music
           default: []
           selector:
@@ -107,28 +106,26 @@ max_exceeded: silent
 
 
 variables:
-  # Integration config
    media_player_remote: !input media_player_remote
    event: "{{ trigger.id }}"
-
 
 triggers:
   - trigger: state
     entity_id: !input media_player_remote
-    id: turned_on
+    id: turn_on_trigger
     to: "on"
   - trigger: state
     entity_id: !input media_player_remote
-    id: turned_off
+    id: turn_off_trigger
     to: "off"
     
   - trigger: state
     entity_id: !input media_player_remote
-    id: payed
+    id: playing_trigger
     to: "playing"
   - trigger: state
     entity_id: !input media_player_remote
-    id: paused
+    id: paused_trigger
     from: "playing"
     to: "paused"
     
@@ -161,6 +158,19 @@ triggers:
     
 actions:
   - choose:
-      # ========== DIAL ==========
+      - conditions: "{{ event == 'turn_on_trigger' }}"
+        sequence: !input on_input
+      - conditions: "{{ event in 'turn_off_trigger' }}"
+        sequence: !input off_input
+        
+      - conditions: "{{ event == 'playing_trigger' }}"
+        sequence: !input play_input
+      - conditions: "{{ event in 'paused_paused' }}"
+        sequence: !input pause_input
+        
       - conditions: "{{ event in media_sources }}"
-        sequence: !input media_source
+        sequence: !input media_sources_input
+      - conditions: "{{ event in gaming_sources }}"
+        sequence: !input gaming_sources_input
+      - conditions: "{{ event in music_sources }}"
+        sequence: !input music_sources_input
