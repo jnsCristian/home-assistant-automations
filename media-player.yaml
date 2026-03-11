@@ -56,7 +56,6 @@ blueprint:
           default: []
           selector:
             action: {}
-    input:
     my_input:
       name: Example input
       mulitple: true
