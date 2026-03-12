@@ -17,6 +17,22 @@ blueprint:
               multiple: false
               filter:
                 - device_class: tv
+    adaptive_lighting_helper:
+      name: Adaptive lighting input helper
+      selector:
+        entity:
+          filter:
+            - domain:
+                - input_boolean
+          multiple: false
+    sunset:
+      name: Active only after sunset and before sunrise
+      selector:
+        boolean: 
+    adaptive_lighting:
+      name: Active only if adaptive lighting is enabled
+      selector:
+        boolean:
     media_sources:
       name: Media Sources
       selector:
@@ -108,11 +124,21 @@ triggers:
   - trigger: state
     entity_id: !input media_player_remote
     id: turn_on_trigger
+    from: "off"
+    to: "on"
+  - trigger: state
+    entity_id: !input media_player_remote
+    id: turn_on_trigger
+    from: "unavailable"
     to: "on"
   - trigger: state
     entity_id: !input media_player_remote
     id: turn_off_trigger
     to: "off"
+  - trigger: state
+    entity_id: !input media_player_remote
+    id: turn_off_trigger
+    to: "unavailable"
     
   - trigger: state
     entity_id: !input media_player_remote
@@ -150,7 +176,17 @@ triggers:
     id: Spotify - Music and Podcasts
     to: "Spotify - Music and Podcasts"
 
-    
+conditions:
+  - condition: sun
+    before: sunrise
+    after: sunset
+    enabled: !input sunset
+  - condition: state
+    entity_id: !input adaptive_lighting_helper
+    state:
+      - "on"
+    enabled: !input adaptive_lighting
+
 actions:
   - choose:
       - conditions: "{{ event == 'turn_on_trigger' }}"
@@ -160,7 +196,7 @@ actions:
         
       - conditions: "{{ event == 'playing_trigger' }}"
         sequence: !input play_input
-      - conditions: "{{ event in 'paused_paused' }}"
+      - conditions: "{{ event in 'paused_trigger' }}"
         sequence: !input pause_input
         
       - conditions: "{{ event in media_sources }}"
